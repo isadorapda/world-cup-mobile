@@ -1,5 +1,5 @@
-import { FlatList } from 'native-base'
 import React from 'react'
+import { FlatList } from 'native-base'
 import { Alert } from 'react-native'
 import { api } from '../services/api'
 import { EmptyMyPollList } from './EmptyMyPoolList'

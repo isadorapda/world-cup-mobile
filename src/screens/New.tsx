@@ -1,6 +1,6 @@
 import React from 'react'
 import { Alert } from 'react-native'
-import { Heading, VStack, Text /*, useToast*/ } from 'native-base'
+import { Heading, VStack, Text } from 'native-base'
 import { Header } from '../components/Header'
 import Logo from '../assets/logo.svg'
 import { Input } from '../components/Input'
@@ -10,13 +10,8 @@ import { api } from '../services/api'
 export function New() {
   const [newPoll, setNewPoll] = React.useState<string>('')
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
-  // const toast = useToast()
   async function handleCreatePoll() {
     if (!newPoll.trim()) {
-      // return toast.show({
-      //   title: "Hold on! Poll's name is required.",
-      //   placement: 'top',
-      // })
       Alert.alert('Hold on!', "Poll's name is required.")
     }
     try {

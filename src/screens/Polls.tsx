@@ -7,7 +7,6 @@ import { Header } from '../components/Header'
 import { PollCard, PollCardProps } from '../components/PollCard'
 import { api } from '../services/api'
 import { Loading } from '../components/Loading'
-import { ItemClick } from 'native-base/lib/typescript/components/composites/Typeahead/useTypeahead/types'
 import { EmptyPollList } from '../components/EmptyPoolList'
 
 export function Polls() {
@@ -27,7 +26,6 @@ export function Polls() {
   }
 
   useFocusEffect(
-    // similar to useEffecr. We are using it here to automaticaly load the new polls to the list without the need to refresh the app
     useCallback(() => {
       fetchPolls()
     }, [])
