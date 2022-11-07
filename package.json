@@ -40,7 +40,8 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@types/country-list": "^2.1.1",
-    "@types/country-list-js": "^3.1.2"
+    "@types/country-list-js": "^3.1.2",
+    "expo-module-scripts": "^2.1.1"
   },
   "private": true,
   "overrides": {
